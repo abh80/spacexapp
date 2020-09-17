@@ -1,0 +1,9 @@
+{
+  "short_name": "SpaceX App",
+  "name": "An unofficial app for space x fans using the unofficial API",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

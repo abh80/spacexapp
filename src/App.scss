@@ -1,0 +1,88 @@
+* {
+  max-width: 100%;
+}
+html {
+  background-color: black;
+  width: 100%;
+}
+body {
+  color: white;
+  fill: white;
+  font-family: 'alata';
+}
+.basePage {
+  color: #ffffff;
+  fill: white;
+}
+.basePage svg {
+  width: 20%;
+  top: 20px;
+  cursor: pointer;
+  transition: top ease 2s;
+  position: relative;
+}
+.basePage svg:hover {
+  top: 0px;
+  position: relative;
+}
+.NavBar {
+  border-bottom: 1px solid #ffffff;
+}
+
+.NavLink {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.NavLink:hover {
+  opacity: 1;
+}
+
+.NavLink::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.NavLink::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.NavLink:hover::before {
+  width: 100%;
+}
+.NavLink {
+  left: 300px;
+  width: 60px;
+  top: -20px;
+}
+.test {
+  position: absolute;
+  padding: 0 15px;
+  left:1000;
+  background-color: white;
+}
+@font-face {
+  font-family: 'alata';
+  src: url("./assets/alata/Alata-Regular.ttf") format('truetype')
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}

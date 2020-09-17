@@ -1,0 +1,47 @@
+.about-title {
+  margin-bottom: 40px;
+  line-height: 80px;
+  color: #ffffff;
+  font-weight: 700 !important;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 20px;
+  transition: top ease 2s;
+}
+.about-title:hover {
+  top: 0px;
+}
+.aboutSection {
+  color: black;
+  fill: white;
+}
+.container {
+  top: 80px;
+  height: 500px;
+  width: 1332px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.container p {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  top: 40px;
+  position: relative;
+}
+.container h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  top: 40px;
+  margin: auto;
+}
+.appinfo {
+  position: relative;
+  top: 30px;
+  margin: auto;
+}

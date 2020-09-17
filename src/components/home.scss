@@ -1,0 +1,118 @@
+body {
+  color: white;
+}
+.titleBar {
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.titleBar h1 {
+  font-size: 40px;
+}
+.titleBar h2 {
+  position: relative;
+  top: 20px;
+}
+h5 {
+  margin: 0px;
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+}
+.card {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 18em;
+  width: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px black 3, -15px -15px 27px black;
+  box-shadow: 15px 15px 27px black, -15px -15px 27px black;
+  animation-delay: 10s;
+  animation: slideIn 1s ease-in 0.9s;
+}
+.image {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.cardTitle {
+  background-color: #fafafc;
+  height: 6em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.card:hover .cardTitle {
+  height: 0em;
+  padding: 0px 1em;
+}
+.card:hover .image {
+  height: 18em;
+}
+p {
+  color: black;
+}
+.titleBar {
+  animation: slideIn 0.8s ease-in 0.9s;
+  overflow: hidden;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes card {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.homePage {
+  animation: fadebg 2s ease-in 2s ;
+}
+@keyframes fadeBg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

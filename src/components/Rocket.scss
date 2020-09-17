@@ -1,0 +1,160 @@
+:root {
+  --base-color: rgba(255, 255, 255, 1);
+  --hover-color: rgba(0, 0, 0, 0);
+}
+.rocketPage h1 {
+  cursor: pointer;
+  position: relative;
+}
+.rocketPage h1:hover {
+  color: black;
+}
+$color-one: #1f2124;
+.GoButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: -200 15px;
+  margin: 0px 605px 0;
+  border: 2px solid #fff;
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+
+  > .text {
+    position: relative;
+    color: white;
+    background-repeat: repeat;
+    background-size: 100% 200%;
+    font-family: "alata";
+    background-position: 0 0;
+    font-size: 20px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 300ms;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--base-color);
+    transform-origin: 0 0;
+    transform: scale3d(1, 0, 1);
+    transition: transform 300ms;
+  }
+
+  &:hover {
+    .text {
+      background-position: 0 100%;
+      color: black;
+    }
+
+    &::before {
+      transform-origin: 0 100%;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+input[type="text"] {
+  position: relative;
+  padding: 15px 40px 15px 20px;
+  width: 300px;
+  margin: 100px;
+  color: #525252;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ffffff 0%, #464747 #f9f9f9 100%);
+  outline: none;
+}
+.selection h2 {
+  text-align: left;
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+.rockets {
+  position: relative;
+  top: 50px;
+}
+.card1 {
+  width: 350px;
+  height: 250px;
+  background-color: transparent;
+  display: block;
+  position: relative;
+  border-spacing: 2em;
+  top: 30px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.container1 {
+  background-color: transparent;
+  top: 30px;
+}
+.container1 h4 {
+  color: black;
+}
+.card1 img {
+  width: 50%;
+  height: 50%;
+}
+.RocketInfo {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+.images {
+  display: none;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+.leftBtn:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.rightBtn:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.leftBtn{
+  position: absolute;
+  top: 53%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.rightBtn {
+  position: absolute;
+  top: 53%;
+  right: 22.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
